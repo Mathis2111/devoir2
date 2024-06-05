@@ -1,0 +1,7 @@
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\bin\Debug\devoir2-app.exe.config
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\bin\Debug\devoir2-app.exe
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\bin\Debug\devoir2-app.pdb
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\obj\Debug\devoir2-app.csproj.AssemblyReference.cache
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\obj\Debug\devoir2-app.csproj.CoreCompileInputs.cache
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\obj\Debug\devoir2-app.exe
+C:\Users\Mathis\Documents\GitHub\devoir2\devoir2-app\devoir2-app\obj\Debug\devoir2-app.pdb

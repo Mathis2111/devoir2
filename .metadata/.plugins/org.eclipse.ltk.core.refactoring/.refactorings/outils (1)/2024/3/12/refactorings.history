@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 3 elements to &apos;Urban_Marginal/src/Outils&apos;&#x0D;&#x0A;- Original project: &apos;outils (1)&apos;&#x0D;&#x0A;- Destination element: &apos;Urban_Marginal/src/Outils&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     outils.son.Son.java&#x0D;&#x0A;     outils.son.Duree.java&#x0D;&#x0A;     outils.son.Sound.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=Urban_Marginal/src&lt;Outils" element1="/&lt;outils.son{Son.java" element2="/&lt;outils.son{Duree.java" element3="/&lt;outils.son{Sound.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1710771722098" units="3" version="1.0"/>
-</session>

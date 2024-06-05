@@ -1,7 +1,7 @@
 ﻿
 namespace devoir2_app.Vues
 {
-    partial class ConfirmationModificationPersonnel
+    partial class VueConfirmationModificationPersonnel
     {
         /// <summary>
         /// Required designer variable.

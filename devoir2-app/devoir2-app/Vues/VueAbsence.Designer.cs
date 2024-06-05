@@ -29,12 +29,68 @@ namespace devoir2_app.Vues
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Absences = new System.Windows.Forms.ListBox();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnSuppr = new System.Windows.Forms.Button();
+            this.btnModifier = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Absences
+            // 
+            this.Absences.AccessibleName = "lstBoxAbsences";
+            this.Absences.FormattingEnabled = true;
+            this.Absences.Location = new System.Drawing.Point(35, 25);
+            this.Absences.Name = "Absences";
+            this.Absences.Size = new System.Drawing.Size(127, 147);
+            this.Absences.TabIndex = 0;
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Location = new System.Drawing.Point(188, 40);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.TabIndex = 1;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            // 
+            // btnSuppr
+            // 
+            this.btnSuppr.Location = new System.Drawing.Point(188, 83);
+            this.btnSuppr.Name = "btnSuppr";
+            this.btnSuppr.Size = new System.Drawing.Size(75, 23);
+            this.btnSuppr.TabIndex = 2;
+            this.btnSuppr.Text = "Supprimer";
+            this.btnSuppr.UseVisualStyleBackColor = true;
+            // 
+            // btnModifier
+            // 
+            this.btnModifier.Location = new System.Drawing.Point(188, 127);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.TabIndex = 3;
+            this.btnModifier.Text = "Modifier";
+            this.btnModifier.UseVisualStyleBackColor = true;
+            // 
+            // VueAbsence
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(734, 261);
+            this.Controls.Add(this.btnModifier);
+            this.Controls.Add(this.btnSuppr);
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.Absences);
+            this.Name = "VueAbsence";
             this.Text = "VueAbsence";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox Absences;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnSuppr;
+        private System.Windows.Forms.Button btnModifier;
     }
 }

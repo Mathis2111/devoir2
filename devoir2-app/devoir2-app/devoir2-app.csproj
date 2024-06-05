@@ -33,21 +33,176 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.4.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bddmanager\BddManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vues\VueAjouterAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueAjouterAbsence.Designer.cs">
+      <DependentUpon>VueAjouterAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationEnregistrementModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationEnregistrementModification.Designer.cs">
+      <DependentUpon>VueConfirmationEnregistrementModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationModificationPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationModificationPersonnel.Designer.cs">
+      <DependentUpon>VueConfirmationModificationPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueAbsence.Designer.cs">
+      <DependentUpon>VueAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationSuppressionAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationSuppressionAbsence.Designer.cs">
+      <DependentUpon>VueConfirmationSuppressionAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationSuppressionPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueConfirmationSuppressionPersonnel.Designer.cs">
+      <DependentUpon>VueConfirmationSuppressionPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueLogin.Designer.cs">
+      <DependentUpon>VueLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueModification.Designer.cs">
+      <DependentUpon>VueModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VueModificationAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VueModificationAbsence.Designer.cs">
+      <DependentUpon>VueModificationAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\VuePersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\VuePersonnel.Designer.cs">
+      <DependentUpon>VuePersonnel.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controlleurs\" />
+    <Folder Include="Modeles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vues\VueAjouterAbsence.resx">
+      <DependentUpon>VueAjouterAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueConfirmationEnregistrementModification.resx">
+      <DependentUpon>VueConfirmationEnregistrementModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueConfirmationModificationPersonnel.resx">
+      <DependentUpon>VueConfirmationModificationPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueAbsence.resx">
+      <DependentUpon>VueAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueConfirmationSuppressionAbsence.resx">
+      <DependentUpon>VueConfirmationSuppressionAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueConfirmationSuppressionPersonnel.resx">
+      <DependentUpon>VueConfirmationSuppressionPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueLogin.resx">
+      <DependentUpon>VueLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueModification.resx">
+      <DependentUpon>VueModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VueModificationAbsence.resx">
+      <DependentUpon>VueModificationAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\VuePersonnel.resx">
+      <DependentUpon>VuePersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

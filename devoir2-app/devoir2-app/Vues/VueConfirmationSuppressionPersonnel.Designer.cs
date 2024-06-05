@@ -29,19 +29,19 @@ namespace devoir2_app.Vues
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
             this.btnNon = new System.Windows.Forms.Button();
             this.btnOui = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblQuestion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Confirmez-vous la suppression du personnel sélectionné ?";
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Location = new System.Drawing.Point(201, 61);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(279, 13);
+            this.lblQuestion.TabIndex = 0;
+            this.lblQuestion.Text = "Confirmez-vous la suppression du personnel sélectionné ?";
             // 
             // btnNon
             // 
@@ -68,7 +68,7 @@ namespace devoir2_app.Vues
             this.ClientSize = new System.Drawing.Size(734, 261);
             this.Controls.Add(this.btnOui);
             this.Controls.Add(this.btnNon);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblQuestion);
             this.Name = "VueConfirmationSuppressionPersonnel";
             this.Text = "VueConfirmationSuppressionPersonnel";
             this.ResumeLayout(false);
@@ -78,7 +78,7 @@ namespace devoir2_app.Vues
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Button btnNon;
         private System.Windows.Forms.Button btnOui;
     }

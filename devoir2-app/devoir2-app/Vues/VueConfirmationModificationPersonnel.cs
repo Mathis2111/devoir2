@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace devoir2_app.Vues
 {
-    public partial class ConfirmationModificationPersonnel : Form
+    public partial class VueConfirmationModificationPersonnel : Form
     {
-        public ConfirmationModificationPersonnel()
+        public VueConfirmationModificationPersonnel()
         {
             InitializeComponent();
         }

@@ -1,13 +1,23 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace devoir2_app.Vues
 {
-    partial class VuePersonnel
+    partial class VuePersonnel : Form
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Controllers.PersonnelController controller;
 
+
+        public VuePersonnel(Controllers.PersonnelController controller)
+        {
+            this.controller = controller;
+            InitializeComponent();
+        }
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -53,6 +63,7 @@ namespace devoir2_app.Vues
             this.btnAjouter.TabIndex = 1;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // btnSuppr
             // 
@@ -95,6 +106,11 @@ namespace devoir2_app.Vues
             this.Text = "VuePersonnel";
             this.ResumeLayout(false);
 
+        }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            controller.AfficherAjouterPersonnel();
         }
 
         #endregion

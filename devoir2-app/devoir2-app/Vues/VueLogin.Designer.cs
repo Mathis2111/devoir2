@@ -1,32 +1,18 @@
-﻿
+﻿using System;
+using System.Windows.Forms;
+
 namespace devoir2_app.Vues
 {
-    partial class VueLogin
+    public partial class VueLogin : Form
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private Controllers.LoginController controller;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        public VueLogin(Controllers.LoginController controller)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+            this.controller = controller;
+            InitializeComponent();
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.lblUtilisateur = new System.Windows.Forms.Label();
@@ -45,7 +31,6 @@ namespace devoir2_app.Vues
             this.lblUtilisateur.Size = new System.Drawing.Size(84, 13);
             this.lblUtilisateur.TabIndex = 0;
             this.lblUtilisateur.Text = "Nom d\'utilisateur";
-            this.lblUtilisateur.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMotDePasse
             // 
@@ -55,7 +40,6 @@ namespace devoir2_app.Vues
             this.lblMotDePasse.Size = new System.Drawing.Size(71, 13);
             this.lblMotDePasse.TabIndex = 1;
             this.lblMotDePasse.Text = "Mot de passe";
-            this.lblMotDePasse.Click += new System.EventHandler(this.lblMotDePasse_Click);
             // 
             // txtBoxLogin
             // 
@@ -81,6 +65,7 @@ namespace devoir2_app.Vues
             this.btnValider.TabIndex = 4;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // VueLogin
             // 
@@ -99,7 +84,10 @@ namespace devoir2_app.Vues
 
         }
 
-        #endregion
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            controller.ValiderLogin(txtBoxLogin.Text, txtBoxMotDePasse.Text);
+        }
 
         private System.Windows.Forms.Label lblUtilisateur;
         private System.Windows.Forms.Label lblMotDePasse;

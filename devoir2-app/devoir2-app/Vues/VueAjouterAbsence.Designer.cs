@@ -32,11 +32,11 @@ namespace devoir2_app.Vues
             this.lblDateDebut = new System.Windows.Forms.Label();
             this.lblDateFin = new System.Windows.Forms.Label();
             this.lblMotif = new System.Windows.Forms.Label();
-            this.txtBoxDateDebut = new System.Windows.Forms.TextBox();
-            this.txtBoxDateFin = new System.Windows.Forms.TextBox();
-            this.txtBoxMotif = new System.Windows.Forms.TextBox();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
+            this.dateTimePickerDateDebut = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDateFin = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxMotif = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblDateDebut
@@ -66,27 +66,6 @@ namespace devoir2_app.Vues
             this.lblMotif.TabIndex = 2;
             this.lblMotif.Text = "Motif";
             // 
-            // txtBoxDateDebut
-            // 
-            this.txtBoxDateDebut.Location = new System.Drawing.Point(184, 57);
-            this.txtBoxDateDebut.Name = "txtBoxDateDebut";
-            this.txtBoxDateDebut.Size = new System.Drawing.Size(119, 20);
-            this.txtBoxDateDebut.TabIndex = 3;
-            // 
-            // txtBoxDateFin
-            // 
-            this.txtBoxDateFin.Location = new System.Drawing.Point(184, 99);
-            this.txtBoxDateFin.Name = "txtBoxDateFin";
-            this.txtBoxDateFin.Size = new System.Drawing.Size(119, 20);
-            this.txtBoxDateFin.TabIndex = 4;
-            // 
-            // txtBoxMotif
-            // 
-            this.txtBoxMotif.Location = new System.Drawing.Point(184, 143);
-            this.txtBoxMotif.Name = "txtBoxMotif";
-            this.txtBoxMotif.Size = new System.Drawing.Size(119, 20);
-            this.txtBoxMotif.TabIndex = 5;
-            // 
             // btnAnnuler
             // 
             this.btnAnnuler.Location = new System.Drawing.Point(102, 183);
@@ -105,16 +84,38 @@ namespace devoir2_app.Vues
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
             // 
+            // dateTimePickerDateDebut
+            // 
+            this.dateTimePickerDateDebut.Location = new System.Drawing.Point(184, 51);
+            this.dateTimePickerDateDebut.Name = "dateTimePickerDateDebut";
+            this.dateTimePickerDateDebut.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDateDebut.TabIndex = 8;
+            // 
+            // dateTimePickerDateFin
+            // 
+            this.dateTimePickerDateFin.Location = new System.Drawing.Point(184, 92);
+            this.dateTimePickerDateFin.Name = "dateTimePickerDateFin";
+            this.dateTimePickerDateFin.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDateFin.TabIndex = 9;
+            // 
+            // comboBoxMotif
+            // 
+            this.comboBoxMotif.FormattingEnabled = true;
+            this.comboBoxMotif.Location = new System.Drawing.Point(182, 135);
+            this.comboBoxMotif.Name = "comboBoxMotif";
+            this.comboBoxMotif.Size = new System.Drawing.Size(202, 21);
+            this.comboBoxMotif.TabIndex = 10;
+            // 
             // VueAjouterAbsence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 261);
+            this.Controls.Add(this.comboBoxMotif);
+            this.Controls.Add(this.dateTimePickerDateFin);
+            this.Controls.Add(this.dateTimePickerDateDebut);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnAnnuler);
-            this.Controls.Add(this.txtBoxMotif);
-            this.Controls.Add(this.txtBoxDateFin);
-            this.Controls.Add(this.txtBoxDateDebut);
             this.Controls.Add(this.lblMotif);
             this.Controls.Add(this.lblDateFin);
             this.Controls.Add(this.lblDateDebut);
@@ -130,10 +131,10 @@ namespace devoir2_app.Vues
         private System.Windows.Forms.Label lblDateDebut;
         private System.Windows.Forms.Label lblDateFin;
         private System.Windows.Forms.Label lblMotif;
-        private System.Windows.Forms.TextBox txtBoxDateDebut;
-        private System.Windows.Forms.TextBox txtBoxDateFin;
-        private System.Windows.Forms.TextBox txtBoxMotif;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnValider;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateDebut;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateFin;
+        private System.Windows.Forms.ComboBox comboBoxMotif;
     }
 }
